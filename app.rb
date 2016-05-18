@@ -12,3 +12,7 @@ get('/title') do
   @title = params.fetch('title').title_case()
   erb(:title)
 end
+
+get('/') do
+  erb(:index)
+end
